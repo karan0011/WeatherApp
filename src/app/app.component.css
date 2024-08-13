@@ -1,0 +1,30 @@
+nav {
+    background-color: #333333;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  a {
+    color: #E1F4F3;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    color: #FFFFFF;
+  }
+  
+  a.router-link-active {
+    color: #FFFFFF;
+  }
+  

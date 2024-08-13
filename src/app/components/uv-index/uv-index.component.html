@@ -1,0 +1,17 @@
+<div class="uv-index">
+    <h2>UV Index</h2>
+    <label>
+      Latitude:
+      <input type="number" [(ngModel)]="lat" placeholder="Enter latitude">
+    </label>
+    <label>
+      Longitude:
+      <input type="number" [(ngModel)]="lon" placeholder="Enter longitude">
+    </label>
+    <button (click)="getUVIndex()">Get UV Index</button>
+  
+    <div *ngIf="uvIndexData" class="uv-info">
+      <h3>UV Index: {{ uvIndexData.value }}</h3>
+    </div>
+  </div>
+  

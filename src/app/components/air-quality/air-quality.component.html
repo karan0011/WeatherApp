@@ -1,0 +1,17 @@
+<div class="air-quality">
+    <h2>Air Quality</h2>
+    <label>
+      Latitude:
+      <input type="number" [(ngModel)]="lat" placeholder="Enter latitude">
+    </label>
+    <label>
+      Longitude:
+      <input type="number" [(ngModel)]="lon" placeholder="Enter longitude">
+    </label>
+    <button (click)="getAirQuality()">Get Air Quality</button>
+  
+    <div *ngIf="airQualityData" class="air-quality-info">
+      <h3>Air Quality Index: {{ airQualityData.list[0].main.aqi }}</h3>
+    </div>
+  </div>
+  

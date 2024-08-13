@@ -1,0 +1,48 @@
+.air-quality {
+    background-color: #E1F4F3;
+    padding: 20px;
+    border-radius: 10px;
+    color: #333333;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    padding: 8px;
+    border: 1px solid #706C61;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  button {
+    background-color: #706C61;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #333333;
+  }
+  
+  .air-quality-info {
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  

@@ -1,0 +1,16 @@
+<div class="forecast">
+    <h2>Weather Forecast</h2>
+    <label>
+      City:
+      <input [(ngModel)]="city" placeholder="Enter city name">
+    </label>
+    <button (click)="getForecast()">Get Forecast</button>
+  
+    <div *ngIf="forecastData" class="forecast-info">
+      <h3>Forecast for {{ forecastData.city.name }}</h3>
+      <div *ngFor="let forecast of forecastData.list">
+        <p>{{ forecast.dt_txt }} - {{ forecast.weather[0].description }}, Temp: {{ forecast.main.temp }} K</p>
+      </div>
+    </div>
+  </div>
+  

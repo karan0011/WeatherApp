@@ -1,0 +1,25 @@
+<div class="weather-alerts">
+    <h2>Weather Alerts</h2>
+    <label>
+      Latitude:
+      <input type="number" [(ngModel)]="lat" placeholder="Enter latitude">
+    </label>
+    <label>
+      Longitude:
+      <input type="number" [(ngModel)]="lon" placeholder="Enter longitude">
+    </label>
+    <button (click)="getWeatherAlerts()">Get Weather Alerts</button>
+  
+    <div *ngIf="alertsData && alertsData.alerts.length > 0" class="alerts-info">
+      <h3>Alerts:</h3>
+      <ul>
+        <li *ngFor="let alert of alertsData.alerts">
+          {{ alert.event }}: {{ alert.description }}
+        </li>
+      </ul>
+    </div>
+    <div *ngIf="alertsData && alertsData.alerts.length === 0">
+      <p>No current weather alerts.</p>
+    </div>
+  </div>
+  

@@ -1,0 +1,19 @@
+.about {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
+    color: #333333;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    font-size: 1.1em;
+  }
+  

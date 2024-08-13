@@ -1,0 +1,17 @@
+.home {
+    background-color: #E1F4F3;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    color: #333333;
+  }
+  
+  h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2em;
+  }
+  
